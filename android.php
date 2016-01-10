@@ -7,5 +7,5 @@
 	$loader = new Twig_Loader_Filesystem('views');
 	$twig = new Twig_Environment($loader);
 
-	echo $twig->render('php.html', array('name'=>'Proyectos PHP'));
+	echo $twig->render('android.html', array('name'=>'Proyectos Android'));
 ?>
