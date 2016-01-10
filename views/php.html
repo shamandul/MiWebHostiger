@@ -1,0 +1,32 @@
+{% extends 'template/base.html' %}
+{% block body %}
+{{ parent() }}
+<section class="container">
+	<div class="row">
+		<div class="col s12">
+			<h1 class="center">{{ name }}</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/web-tienda-online-ajax.jpeg">
+              <span class="card-title">Tienda On-Line Ajax</span>
+            </div>
+            <div class="card-content">
+              <p>Este proyecto es una pequeñademostración de la creación de una tienda On-Line,no es totalmente funcional ya que espartede una prueba y no se necesitaba que se implementara el código para guardar la compra.</p>
+              <p>Este proyecto está desarrollado utilizando HTML5, CSS, JQuery, PHP, Ajax y Materialize.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Visitar</a>
+              <a href="#">Ir GitHub</a>
+            </div>
+          </div>
+        </div>
+	</div>
+</section>
+{% endblock%}
+{% block javascriptslast %}
+	<script type="text/javascript" src="js/controllerIndex.js"></script>
+{% endblock %}

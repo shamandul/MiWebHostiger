@@ -1,0 +1,49 @@
+{% extends 'template/base.html' %}
+{% block body %}
+{{ parent() }}
+<section class="container">
+	<div class="row">
+		<div class="col s12">
+			<h1 class="center">{{ name }}</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+             		<span class="card-title">Proyecto PHP</span>
+					<p>Esta sección esta dedicada a proyecto en PHP. Aquí tendremos una breve descripción de cada proyecto y tendremos los enlaces a su código en GitHub.</p>
+				</div>
+				<div class="card-action">
+             		<a href="php.php">Ir a PHP</a>
+            	</div>
+			</div>	
+		</div>
+		<div class="col s4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+             		<span class="card-title">Proyecto Java</span>
+					<p>Esta sección esta dedicada a proyecto en Java. Aquí tendremos una breve descripción de cada proyecto y  tendremoslos enlaces a su código en GitHub.</p>
+				</div>
+				<div class="card-action">
+             		<a href="java.php">Ir a Java</a>
+            	</div>
+			</div>	
+		</div>
+		<div class="col s4">
+			<div class="card blue-grey darken-1">
+				<div class="card-content white-text">
+             		<span class="card-title">Proyecto Android</span>
+					<p>Esta sección esta dedicada a proyecto en Android. Aquí tendremos una breve descripción de cada proyecto y tendremos los enlaces a su código en GitHub.</p>
+				</div>
+				<div class="card-action">
+             		<a href="android.php">Ir a Android</a>
+            	</div>
+			</div>	
+		</div>
+	</div>
+</section>
+{% endblock%}
+{% block javascriptslast %}
+	<script type="text/javascript" src="js/controllerIndex.js"></script>
+{% endblock %}
